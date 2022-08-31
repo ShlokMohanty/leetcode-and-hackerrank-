@@ -1,0 +1,49 @@
+maze[][] = {{1,0,0,0},
+            {1,1,0,1},
+            {0,1,0,0},
+            {1,1,1,1}}
+            
+output: 
+Yes 
+1 0 0 0 
+1 1 0 0
+0 1 0 0 
+0 1 1 1
+
+
+input: 
+{{1,0,0},
+{0,1,0},
+{1,1,1}}
+
+output:
+No
+
+explanations :
+operations allowed :
+down , up , right , left
+
+logic that can be thought of :
+
+     i= 0 j=0 mat[0][0]=1      (start)          **count
+     i=0 j=1 mat[0][1] = 0     (start + right)
+     i=0 j=2 mat[0][2]=0      (start + right + right)
+     i=0 j=3 mat[0][3]=0       ( start + right + right + right)
+     
+     i=1 j=0 mat[1][0] = 1     (start + down)             **count 
+     i=1 j=1 mat[1][1] = 1      (start + down + right)    **count  
+     i=1 j=2 mat[1][2] = 0     (start + down + right + right) 
+     i=1 j=3 mat[1][3] = 0     (start + down + right + right + right)
+     
+     i=2 j=0 mat[2][0] = 0     (start + down + down)
+     i=2 j=1 mat[2][1] = 1     (start + down + down + right)        **count
+     i=2 j=2 mat[2][2] = 0     (start + down + down + right + right)
+     i=2 j=3 mat[2][3] = 0     (start + down + down + right + right + right)
+     
+     i=3 j=0 mat[3][0]=1        (start + down + down + down)
+     i=3 j=1 mat[3][1]=1        (start + down + down + down + right)         ** count 
+     i=3 j=2 mat[3][2]=1       (start + down + down + down + right + right) ** count 
+     i=3 j=3 mat[3][3]=1       (start + down + down + down + right + right + right) **count
+     
+     
+     
