@@ -38,12 +38,12 @@ bool checkAnagrams(string a, string b) {
         cout << "Freq A:\n\n";
         for (auto i : freqA)
             cout << i.first << " : " << i.second << endl;
-        
+
         cout << "\nFreq B:\n\n";
         for (auto i : freqA)
             cout << i.first << " : " << i.second << endl;
 
-        if (freqA == freqB) 
+        if (freqA == freqB)
             return true;
         return false;
     }

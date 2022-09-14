@@ -3,6 +3,7 @@ Given two strings s1 and s2, check if they are anagrams.
 
 ## Approach
 Solve by calculating the frequency of the characters in each string. If the frequencies are equal, then they are anagrams. The ideal data structure to use is the Hash table. This maps unique keys to values. In C++ STL, a hash map can be implemented as an `unordered_map`. The following is an example to use `unordered_maps` in C++.
+
 ```cpp
 // C++ program to demonstrate functionality of unordered_map
 #include <iostream>
