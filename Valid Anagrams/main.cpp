@@ -62,14 +62,8 @@ unordered_map<char, int> createMap(string A) {
 
     // Traverse the string
     for (int i = 0; i < len; i++) {
-        char ch = A[i];
-
-        // Check if the key exists
-        if (ret.find(ch) == ret.end())
-            // Increment if so
-            ret[ch]++;
-        else
-            ret[ch] = 1;
+        // Increment index
+        ret[A[i]]++;
     }
 
     return ret;
