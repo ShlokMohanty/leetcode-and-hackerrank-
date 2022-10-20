@@ -6,12 +6,12 @@
 using namespace std;
   
 // Print the queue
-void showq(queue<int> gq)
+void showq(queue<int> q)
 {
-    queue<int> g = gq;
-    while (!g.empty()) {
-        cout << '\t' << g.front();
-        g.pop();
+    queue<int> q = q;
+    while (!q.empty()) {
+        cout << '\t' << q.front();
+        q.pop();
     }
     cout << '\n';
 }
@@ -19,21 +19,21 @@ void showq(queue<int> gq)
 // Driver Code
 int main()
 {
-    queue<int> gquiz;
-    gquiz.push(10);
-    gquiz.push(20);
-    gquiz.push(30);
+    queue<int> q_quiz;
+    q_quiz.push(10);
+    q_quiz.push(20);
+    q_quiz.push(30);
   
-    cout << "The queue gquiz is : ";
-    showq(gquiz);
+    cout << "The queue q_quiz is : ";
+    showq(q_quiz);
   
-    cout << "\ngquiz.size() : " << gquiz.size();
-    cout << "\ngquiz.front() : " << gquiz.front();
-    cout << "\ngquiz.back() : " << gquiz.back();
+    cout << "\nq_quiz.size() : " << q_quiz.size();
+    cout << "\nq_quiz.front() : " << q_quiz.front();
+    cout << "\nq_quiz.back() : " << q_quiz.back();
   
-    cout << "\ngquiz.pop() : ";
-    gquiz.pop();
-    showq(gquiz);
+    cout << "\nq_quiz.pop() : ";
+    q_quiz.pop();
+    showq(q_quiz);
   
     return 0;
 }
