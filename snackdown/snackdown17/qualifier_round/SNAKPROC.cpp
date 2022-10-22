@@ -36,7 +36,7 @@ for(i=0;i<right;i++)
 			}
 		     if(str[j]=='H')
 			{
-			printf("Invalid\n");
+			cout<<"Invalid"<<endl;
 			flag=1;
 			break;
 			}
@@ -47,20 +47,20 @@ for(i=0;i<right;i++)
 		  }
 		if(str[j]=='T')
 		 {
-		    printf("Invalid\n");
+		    cout<<"Invalid"<<endl;
 			flag=1;
 			break;
 		 }
 		if(str[j]=='\0')
 			{
-			printf("Invalid\n");
+			cout<<"Invalid"<<endl;
 			flag=1;
 			break;
 			}
 	}
 	if(flag==0)
 	  {
-		printf("Valid\n");
+		cout<<"valid"<<endl;
 
 	  }
 }
